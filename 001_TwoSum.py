@@ -12,9 +12,12 @@
 
 class Solution:
 
-    def two_sum(self, g_num, t_num):
+    def two_sum(self, given, target):
         # g_num = given_number
         # t_num = target_number
+
+        g_num = given
+        t_num = target
 
         for x, y in enumerate(g_num):
             if t_num - g_num[x] in g_num:
